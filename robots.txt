@@ -1,42 +1,162 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
+# Fichier robots.txt ultra-performant pour 2025
+# Généré pour maximiser l'indexation et la visibilité SEO
+
 User-agent: *
 Disallow: /admin/
-Disallow: /tmp/
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /wp-content/uploads/
+Disallow: /cgi-bin/
 Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+Disallow: /logs/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /error/
+Disallow: /search/
+Disallow: /?s=
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /thank-you/
+Disallow: /confidential/
+Disallow: /legal/
+Disallow: /terms/
+Disallow: /privacy-policy/
+Disallow: /sitemap.xml.gz
+Disallow: /sitemap_index.xml
+Disallow: /xmlrpc.php
+Disallow: /feed/
+Disallow: /comments/feed/
+Disallow: /trackback/
+Disallow: /author/
+Disallow: /tag/
+Disallow: /category/
+Disallow: /?filter_*
+Disallow: /?sort=*
+Disallow: /?page_id=*
+Disallow: /?p=*
+Disallow: /?attachment_id=*
+Disallow: /?post_type=*
+Disallow: /?preview=*
+Disallow: /?s=*
+Disallow: /?*&s=*
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
+# Autoriser l'accès aux fichiers CSS et JS pour un bon rendu SEO
+Allow: /wp-content/cache/
+Allow: /wp-content/themes/*/assets/css/
+Allow: /wp-content/themes/*/assets/js/
+Allow: /wp-content/themes/*/assets/images/
+Allow: /wp-content/uploads/*.css
+Allow: /wp-content/uploads/*.js
+Allow: /wp-content/uploads/*.jpg
+Allow: /wp-content/uploads/*.png
+Allow: /wp-content/uploads/*.webp
+Allow: /wp-content/uploads/*.svg
 
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
+# Autoriser l'accès aux fichiers média pour un bon référencement
+Allow: /wp-content/uploads/*.mp4
+Allow: /wp-content/uploads/*.mp3
+Allow: /wp-content/uploads/*.pdf
+Allow: /wp-content/uploads/*.doc
+Allow: /wp-content/uploads/*.docx
+Allow: /wp-content/uploads/*.xls
+Allow: /wp-content/uploads/*.xlsx
 
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
+# Autoriser l'accès aux pages importantes pour le SEO
+Allow: /about/
+Allow: /contact/
+Allow: /services/
+Allow: /blog/
+Allow: /products/
+Allow: /faq/
+Allow: /testimonials/
+Allow: /portfolio/
+Allow: /case-studies/
+Allow: /resources/
+Allow: /whitepapers/
+Allow: /ebooks/
+Allow: /webinars/
 
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
+# Bloquer les pages de pagination pour éviter le contenu dupliqué
+Disallow: /page/
+Disallow: /page/*
+Disallow: /blog/page/
+Disallow: /blog/page/*
+Disallow: /category/*/page/
+Disallow: /category/*/page/*
+Disallow: /tag/*/page/
+Disallow: /tag/*/page/*
 
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
+# Bloquer les paramètres d'URL inutiles pour éviter le contenu dupliqué
+Disallow: /*?replytocom=*
+Disallow: /*?utm_source=*
+Disallow: /*?utm_medium=*
+Disallow: /*?utm_campaign=*
+Disallow: /*?utm_term=*
+Disallow: /*?utm_content=*
+Disallow: /*?fbclid=*
+Disallow: /*?gclid=*
+Disallow: /*?msclkid=*
+Disallow: /*?ref=*
+
+# Autoriser l'accès aux sitemaps pour une meilleure indexation
+Sitemap: https://clairvoyancemedium.github.io/Ritrova-lamore-grazie-alla-potenza-dei-rituali-a-distanza.github.io/sitemap_index.xml
+Sitemap: https://clairvoyancemedium.github.io/Ritrova-lamore-grazie-alla-potenza-dei-rituali-a-distanza.github.io/sitemap.xml
+Sitemap: https://clairvoyancemedium.github.io/Ritrova-lamore-grazie-alla-potenza-dei-rituali-a-distanza.github.io/post-sitemap.xml
+Sitemap: https://clairvoyancemedium.github.io/Ritrova-lamore-grazie-alla-potenza-dei-rituali-a-distanza.github.io/page-sitemap.xml
+Sitemap: https://clairvoyancemedium.github.io/Ritrova-lamore-grazie-alla-potenza-dei-rituali-a-distanza.github.io/category-sitemap.xml
+Sitemap: https://clairvoyancemedium.github.io/Ritrova-lamore-grazie-alla-potenza-dei-rituali-a-distanza.github.io/tag-sitemap.xml
+Sitemap: https://clairvoyancemedium.github.io/Ritrova-lamore-grazie-alla-potenza-dei-rituali-a-distanza.github.io/author-sitemap.xml
+Sitemap: https://clairvoyancemedium.github.io/Ritrova-lamore-grazie-alla-potenza-dei-rituali-a-distanza.github.io/media-sitemap.xml
+
+# Bloquer les crawlers malveillants connus
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MegaIndex.ru
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Autoriser Googlebot et Bingbot pour une indexation optimale
 User-agent: Googlebot
 Allow: /
-User-agent: AdsBot-Google
-Allow: /
+
 User-agent: Bingbot
 Allow: /
 
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
-Disallow: /
-User-agent: EvilScraper
-Disallow: /
+# Bloquer les crawlers inutiles pour économiser la bande passante
+User-agent: *
+Crawl-delay: 10
 
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+# Fin du fichier robots.txt
