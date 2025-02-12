@@ -402,12 +402,14 @@
         "@type": "DefinedRegion",
         "addressCountry": {
           "@type": "Country",
-          "name": "Mondo intero"
+          "name": "FR"  // Correction : Utilisation d'un code de pays valide (FR pour la France)
         }
       }
     },
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
+      "applicableCountry": "FR",  // Ajout du champ manquant "applicableCountry"
+      "returnPolicyCategory": "MerchantReturnFiniteReturnWindow",  // Ajout du champ manquant "returnPolicyCategory"
       "name": "Politica di Restituzione Digitale di ClairvoyanceMedium.com",
       "url": "https://clairvoyancemedium.github.io/Condizioni-di-restituzione/",
       "merchantReturnDays": 14,
